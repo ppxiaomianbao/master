@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p><h5><b>进入文件页面</b></h5></p>
+
+<div>
+    <form action="/demo/limxFile/save" enctype="multipart/form-data" method="post">
+        <table>
+            <tr>
+                <td width="100" align="right">照片：</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+        </table>
+        <div>
+            <input type="submit" name="提交">
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
