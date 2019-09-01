@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<style>
+    input{
+        position: absolute;
+    }
+</style>
+<body>
+
+<div align="center">
+    <div style="position: absolute;right: 3%"><label style="color: fuchsia"><a href="register">注册</a></label></div>
+    <form action="/demo/login/index">
+        <div>
+            <input name="userName" type="text" placeholder="请输入用户名" style="top: 10px">
+            <input name="passWord" type="password" placeholder="请输入密码" style="top: 50px">
+        </div>
+        <div>
+            <input type="submit" name="提交" style="top: 90px; left: 53%">
+        </div>
+    </form>
+</div>
+</body>
+</html>

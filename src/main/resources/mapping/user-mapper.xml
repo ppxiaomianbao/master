@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemo.mapper.UserMapper">
+
+    <!--插入一条数据到user表 userGemeratedKeys设置为true是让mybatis把插入的这条数据的主键返回，keyProperty是主键字段-->
+    <insert id="save" parameterType="user" useGeneratedKeys="true" keyProperty="id">
+        <!--<selectKey resultType="java.lang.Integer" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>-->
+        INSERT INTO user (userName,passWord) VALUES('${userName}','${passWord}');
+    </insert>
+
+    <select id="findUserByName" resultType="user" parameterType="String">
+        select *  from user where userName = #{userName}
+    </select>
+
+
+
+</mapper>

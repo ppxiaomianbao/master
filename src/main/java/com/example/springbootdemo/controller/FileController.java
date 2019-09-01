@@ -30,7 +30,7 @@ public class FileController {
 
     @RequestMapping("save")
     @ResponseBody
-    public R fileSave(@RequestParam(required = false,defaultValue = "")MultipartFile photo) throws IOException {
+    public R fileSave(MultipartFile photo) throws IOException {
         R r = new R();
         if(photo.isEmpty()){
             r.setErrmsg("error --- photo is empty!!!");
@@ -38,7 +38,7 @@ public class FileController {
             return r;
         }
         String fileName = photo.getOriginalFilename();
-        System.out.println(fileName);
+        System.err.println(fileName);
         photo.transferTo(new File("d://img",fileName));
         r.setErrmsg("success");
         r.setErrcode("0");
