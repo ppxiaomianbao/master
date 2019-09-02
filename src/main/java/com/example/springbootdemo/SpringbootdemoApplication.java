@@ -41,6 +41,6 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
 
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/*");
+        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/login");
     }
 }
