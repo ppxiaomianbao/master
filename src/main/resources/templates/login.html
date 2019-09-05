@@ -7,21 +7,151 @@
 <style>
     input{
         position: absolute;
+        height: 27px;
+        left: 64px;
+    }
+    .label1{
+        position: absolute;
+        z-index: 3;
+        width: 33px;
+        height: 31px;
+        background: url(/demo/img/yonghu.jpg) no-repeat;
+        top: 160px;
+        border: 1px solid #bdbdbd;
+        left: 31px;
+    }
+    .label2{
+        position: absolute;
+        z-index: 3;
+        width: 33px;
+        height: 31px;
+        background: url(/demo/img/mima.jpg) no-repeat;
+        top: 200px;
+        border: 1px solid #bdbdbd;
+        left: 31px;
+    }
+
+    .one{
+        height: 80px;
+    }
+    .two{
+        height: 450px;
+        background-color: #F74021
+    }
+    .three{
+        height: 200px;
+        background: aliceblue;
+    }
+    .tupian{
+        background: url(/demo/img/beijing.png) no-repeat;;
+        margin: 0px 350px;
+        height: 450px;
+    }
+    .submit{
+        width: 195px;
+        height: 30px;
+        top: 300px;
+        left: 29px; @import "";
+    }
+    a{
+        position: absolute;
+        top: 275px;
+        width: 80px;
+        left: 135px;
+        text-decoration:none;
+        color: black;
+    }
+    #aa{
+        position: absolute;
+        top: 10px;
+        width: 120px;
+        left: 135px;
+        text-decoration:none;
+        color: fuchsia;
+    }
+    .fromDiv{
+        position: absolute;
+        left: 1000px;
+        top: 135px;
+        width: 350px;
+        height: 445px;
+        background: floralwhite;
+    }
+    img{
+        position: absolute;
+        top: 15px;
+        left: 360px;
+        height: 70px;
+        width: 170px;
+    }
+    b{
+        position: absolute;
+        left: 550px;
+        top: 50px;
+        font-size: 25px;
+        font-family: serif;
+    }
+    p{
+        color: #999;
+        font-size: 12px;
+        vertical-align: middle;
+        position: absolute;
+        left: 450px;
+    }
+    i{
+        background: url(/demo/img/icon-tips.png) no-repeat;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 430px;
+        top: 100px;
     }
 </style>
 <body>
 
-<div align="center">
-    <div style="position: absolute;right: 3%"><label style="color: fuchsia"><a href="register">注册</a></label></div>
-    <form action="/demo/login/index">
-        <div>
-            <input name="userName" type="text" placeholder="请输入用户名" style="top: 10px">
-            <input name="passWord" type="password" placeholder="请输入密码" style="top: 50px">
+<div>
+    <div class="one" style="color: #666;">
+        <img src="/demo/img/log.png" alt="">
+        <b>欢迎登录</b>
+        <div align="center">
+            <div style="position: absolute;right: 13%"><label style="color: fuchsia"><a href="register" id="aa">注册</a></label></div>
         </div>
+    </div>
+    <div class="yeally" style="height: 45px; background: #fff8f0;">
         <div>
-            <input type="submit" name="提交" style="top: 90px; left: 53%">
+            <i class="icon-tips"></i>
+            <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。</p>
         </div>
-    </form>
+    </div>
+    <div class="two">
+        <div class="tupian"></div>
+    </div>
+    <div class="three">
+        下层
+    </div>
+
+    <div  class="fromDiv">
+        <form id="form" name="form" class="checkpass" action="/demo/login/index">
+            <div>
+                <label class="label1" for="input1"></label>
+                <input name="userName" type="text" placeholder="请输入用户名" style="top: 160px" id="input1">
+                <label class="label2" for="input2"></label>
+                <input name="passWord" type="password" placeholder="请输入密码" style="top: 200px" id="input2">
+            </div>
+            <div>
+                <a href="/demo/login/register">忘记密码？</a>
+            </div>
+            <div>
+                <footer class="text-center btncont">
+                    <input type="submit" name="登录" value="登录" class="submit">
+                </footer>
+            </div>
+        </form>
+    </div>
 </div>
+
+<!--<div align="center">
+    <div style="position: absolute;right: 3%"><label style="color: fuchsia"><a href="register">注册</a></label></div>
+</div>-->
 </body>
 </html>

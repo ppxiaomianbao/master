@@ -26,7 +26,7 @@ public class CheckInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        LOGGER.info("后置拦截器执行！！！ 移除的用户id为： {}",ThreadLocalUtil.getUser().getId());
+        //LOGGER.info("后置拦截器执行！！！ 移除的用户id为： {}",ThreadLocalUtil.getUser().getId());
         ThreadLocalUtil.remove();
     }
 }

@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>注册页面</title>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery-1.8.2.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/lyGrid.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery.form.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery-validation/jquery.validate.min.js}"></script>
+    <script type="text/javascript" th:src="@{/plugin/layer/layer-v1.9.2/layer/layer.js}"></script>
+    <script type="text/javascript" th:src="@{/js/login/login.js}"></script>
 </head>
 <style>
 
@@ -11,7 +17,7 @@
 
 <div align="center">
     <h3><label>请填写以下注册信息！</label></h3>
-    <form action="/demo/login/saveRegister">
+    <form id="form" name="form" method="post" th:action="@{/login/saveRegister}">
         <table>
             <tr>
                 <td>用户名：</td>

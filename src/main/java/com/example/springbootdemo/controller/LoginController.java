@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -58,15 +59,18 @@ public class LoginController {
     }
 
     @RequestMapping("saveRegister")
+    @ResponseBody
     public String saveRegister(User user,String passTo){
         User userFlag = userMapper.findUserByName(user.getUserName());
         if(!user.getPassWord().equals(passTo)||userFlag!=null){
-            return "register";
+            //return "register";
+            return "erreo";
         }
         String passMD5 = MD5Util.getMD5(passTo.getBytes());
         user.setPassWord(passMD5);
         userMapper.save(user);
         LOGGER.info("当前插入数据的id：{}",user.getId());
-        return "login";
+        //return "login";
+        return "success";
     }
 }
