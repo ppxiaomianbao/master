@@ -8,7 +8,7 @@
     <script type="text/javascript" th:src="@{/js/jquery/jquery.form.js}"></script>
     <script type="text/javascript" th:src="@{/js/jquery/jquery-validation/jquery.validate.min.js}"></script>
     <script type="text/javascript" th:src="@{/plugin/layer/layer-v1.9.2/layer/layer.js}"></script>
-    <script type="text/javascript" th:src="@{/js/login/login.js}"></script>
+    <script type="text/javascript" th:src="@{/js/login/register.js}"></script>
 </head>
 <style>
 
@@ -21,11 +21,11 @@
         <table>
             <tr>
                 <td>用户名：</td>
-                <td><input name="userName" type="text" placeholder="请输入用户名"></td>
+                <td><input name="userName" id="userName" type="text" placeholder="请输入用户名"></td>
             </tr>
             <tr>
                 <td>密码：</td>
-                <td><input name="passWord" type="password" placeholder="请输入密码"></td>
+                <td><input name="passWord" id="passWord" type="password" placeholder="请输入密码"></td>
             </tr>
             <tr>
                 <td>确认密码：</td>

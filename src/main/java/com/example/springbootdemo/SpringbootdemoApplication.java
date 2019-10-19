@@ -46,6 +46,17 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
         registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/*").excludePathPatterns("/login/login");
     }
 
+    /**
+     * @Method
+     * @Author limingxing
+     * @Version  1.0
+     * @Description
+     * @param null
+     * @Return
+     * @Exception todo 因为继承了webmvcconfigtionsupport所以springboot的默认配置失效，
+     *  todo 导致静态资源无法访问，所以重写此方法，添加静态资源的访问权限
+     * @Date 2019/9/5 12:00
+     */
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
