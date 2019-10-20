@@ -1,0 +1,249 @@
+2019-07-25 11:49:55.627  INFO 10764 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 10764 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 11:49:55.633  INFO 10764 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 11:49:55.677  INFO 10764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 11:49:55.677  INFO 10764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 11:49:56.262  INFO 10764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 11:49:56.264  INFO 10764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 11:49:56.286  INFO 10764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 11:49:56.541  INFO 10764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5ba22b1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 11:49:56.565  INFO 10764 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 11:49:56.577  INFO 10764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b70a661c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 11:49:56.872  INFO 10764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 11:49:56.889  INFO 10764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 11:49:56.889  INFO 10764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 11:49:57.047  INFO 10764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 11:49:57.048  INFO 10764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1370 ms
+2019-07-25 11:49:57.608  INFO 10764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 11:49:57.864  INFO 10764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 11:49:57.910  INFO 10764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 11:49:57.912  INFO 10764 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.686 seconds (JVM running for 3.828)
+2019-07-25 11:50:02.313  INFO 10764 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 11:50:02.313  INFO 10764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 11:50:02.321  INFO 10764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-25 11:50:02.359  INFO 10764 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 11:50:02.360  WARN 10764 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 11:50:02.456  INFO 10764 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:07:33.012  INFO 8888 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 8888 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:07:33.014  INFO 8888 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:07:33.052  INFO 8888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:07:33.052  INFO 8888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:07:33.596  INFO 8888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:07:33.598  INFO 8888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:07:33.620  INFO 8888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 12:07:33.883  INFO 8888 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cf71ae3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:07:33.911  INFO 8888 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:07:33.923  INFO 8888 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ad9e93f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:07:34.240  INFO 8888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:07:34.258  INFO 8888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:07:34.258  INFO 8888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:07:34.429  INFO 8888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:07:34.429  INFO 8888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1377 ms
+2019-07-25 12:07:34.954  INFO 8888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:07:35.237  INFO 8888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:07:35.298  INFO 8888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:07:35.300  INFO 8888 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.656 seconds (JVM running for 3.837)
+2019-07-25 12:07:41.069  INFO 8888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:07:41.069  INFO 8888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:07:41.075  INFO 8888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-25 12:07:41.099  WARN 8888 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:07:41
+2019-07-25 12:07:41.113  INFO 8888 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:07:41.114  WARN 8888 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:07:41.208  INFO 8888 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:08:03.356  INFO 5320 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 5320 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:08:03.359  INFO 5320 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:08:03.405  INFO 5320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:08:03.406  INFO 5320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:08:04.026  INFO 5320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:08:04.028  INFO 5320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:08:04.049  INFO 5320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 12:08:04.298  INFO 5320 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8fa064ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:08:04.324  INFO 5320 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:08:04.336  INFO 5320 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb089fcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:08:04.719  INFO 5320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:08:04.739  INFO 5320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:08:04.740  INFO 5320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:08:04.899  INFO 5320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:08:04.899  INFO 5320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1493 ms
+2019-07-25 12:08:05.418  INFO 5320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:08:05.665  INFO 5320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:08:05.705  INFO 5320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:08:05.709  INFO 5320 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.798 seconds (JVM running for 3.906)
+2019-07-25 12:08:09.504  INFO 5320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:08:09.504  INFO 5320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:08:09.511  INFO 5320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-07-25 12:08:09.535  WARN 5320 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:08:09
+2019-07-25 12:08:09.549  INFO 5320 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:08:09.549  WARN 5320 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:08:09.643  INFO 5320 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:09:20.224  INFO 9812 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 9812 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:09:20.226  INFO 9812 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:09:20.272  INFO 9812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:09:20.272  INFO 9812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:09:20.822  INFO 9812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:09:20.824  INFO 9812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:09:20.845  INFO 9812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 12:09:21.090  INFO 9812 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fb3b16d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:09:21.116  INFO 9812 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:09:21.127  INFO 9812 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b1bec6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:09:21.420  INFO 9812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:09:21.438  INFO 9812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:09:21.438  INFO 9812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:09:21.589  INFO 9812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:09:21.589  INFO 9812 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1317 ms
+2019-07-25 12:09:22.114  INFO 9812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:09:22.360  INFO 9812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:09:22.400  INFO 9812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:09:22.402  INFO 9812 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.55 seconds (JVM running for 3.738)
+2019-07-25 12:09:24.832  INFO 9812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:09:24.832  INFO 9812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:09:24.837  INFO 9812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-25 12:09:24.860  INFO 9812 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:09:24
+2019-07-25 12:09:24.873  INFO 9812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:09:24.874  WARN 9812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:09:24.971  INFO 9812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:11:03.342  INFO 3228 --- [main] c.e.springbootdemo.json.JsonUtilTest     : Starting JsonUtilTest on DESKTOP-15QKEJO with PID 3228 (started by Administrator in F:\springbootdemo)
+2019-07-25 12:11:03.344  INFO 3228 --- [main] c.e.springbootdemo.json.JsonUtilTest     : The following profiles are active: dev
+2019-07-25 12:11:04.470  INFO 3228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:11:04.477  INFO 3228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:11:04.521  INFO 3228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-07-25 12:11:04.956  INFO 3228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$759684e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:11:04.995  INFO 3228 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:11:05.016  INFO 3228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0febfe8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:11:06.532  INFO 3228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:11:07.276  INFO 3228 --- [main] c.e.springbootdemo.json.JsonUtilTest     : Started JsonUtilTest in 4.421 seconds (JVM running for 5.339)
+2019-07-25 12:11:07.788  INFO 3228 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-25 12:11:07.790  INFO 3228 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-25 12:11:09.585  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootdemo.redis.RedisUtilTest], using SpringBootContextLoader
+2019-07-25 12:11:09.604  INFO 3228 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.springbootdemo.redis.RedisUtilTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-07-25 12:11:09.605  INFO 3228 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.springbootdemo.redis.RedisUtilTest]: RedisUtilTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-07-25 12:11:09.625  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.springbootdemo.SpringbootdemoApplication for test class com.example.springbootdemo.redis.RedisUtilTest
+2019-07-25 12:11:09.628  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-25 12:11:09.629  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e98b788, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@794eeaf8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@37c5284a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b8572df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7aaad0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@eed890d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10f477e2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6097fca9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@35eee641, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5729b410, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@64518270, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3b7c58e7]
+2019-07-25 12:11:14.704  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootdemo.SpringbootdemoApplicationTests], using SpringBootContextLoader
+2019-07-25 12:11:14.709  INFO 3228 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.springbootdemo.SpringbootdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-07-25 12:11:14.709  INFO 3228 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.springbootdemo.SpringbootdemoApplicationTests]: SpringbootdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-07-25 12:11:14.718  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.springbootdemo.SpringbootdemoApplication for test class com.example.springbootdemo.SpringbootdemoApplicationTests
+2019-07-25 12:11:14.727  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-25 12:11:14.727  INFO 3228 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@437bd805, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b88ca8e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fa02932, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@61608e1a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c46c9c3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7197b07f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f10fec6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a65a360, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30a7653e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7cff3f1d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6401188a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33a8c9c9]
+2019-07-25 12:11:14.761  INFO 3228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:11:14.768  WARN 3228 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:11:15.023  INFO 3228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:11:17.215  INFO 3228 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:11:17.217  INFO 3228 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-25 12:11:17.227  INFO 3228 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-25 12:11:34.482  INFO 12024 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 12024 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:11:34.484  INFO 12024 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:11:34.525  INFO 12024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:11:34.525  INFO 12024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:11:35.069  INFO 12024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:11:35.071  INFO 12024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:11:35.093  INFO 12024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-07-25 12:11:35.330  INFO 12024 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aefc18d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:11:35.360  INFO 12024 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:11:35.372  INFO 12024 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6453d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:11:35.682  INFO 12024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:11:35.699  INFO 12024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:11:35.700  INFO 12024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:11:35.848  INFO 12024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:11:35.849  INFO 12024 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1324 ms
+2019-07-25 12:11:36.364  INFO 12024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:11:36.612  INFO 12024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:11:36.651  INFO 12024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:11:36.653  INFO 12024 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.543 seconds (JVM running for 3.682)
+2019-07-25 12:11:42.312  INFO 12024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:11:42.312  INFO 12024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:11:42.317  INFO 12024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-25 12:11:42.342  INFO 12024 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:11:42
+2019-07-25 12:11:42.355  INFO 12024 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:11:42.355  WARN 12024 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:11:42.447  INFO 12024 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:11:44.975  INFO 12024 --- [http-nio-8080-exec-2] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:11:44
+2019-07-25 12:12:01.307  INFO 12024 --- [http-nio-8080-exec-4] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:12:01
+2019-07-25 12:12:31.077  INFO 5556 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 5556 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:12:31.080  INFO 5556 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:12:31.141  INFO 5556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:12:31.141  INFO 5556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:12:31.822  INFO 5556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:12:31.824  INFO 5556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:12:31.848  INFO 5556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-07-25 12:12:32.149  INFO 5556 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8c1f37b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:12:32.183  INFO 5556 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:12:32.199  INFO 5556 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e78772b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:12:32.595  INFO 5556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:12:32.617  INFO 5556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:12:32.618  INFO 5556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:12:32.780  INFO 5556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:12:32.780  INFO 5556 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1639 ms
+2019-07-25 12:12:33.525  INFO 5556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:12:33.835  INFO 5556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:12:33.886  INFO 5556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:12:33.889  INFO 5556 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 3.193 seconds (JVM running for 5.066)
+2019-07-25 12:12:45.004  INFO 5556 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:12:45.004  INFO 5556 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:12:45.010  INFO 5556 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-25 12:12:49.041  INFO 5556 --- [http-nio-8080-exec-2] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:12:49
+2019-07-25 12:12:49.060  INFO 5556 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:12:49.061  WARN 5556 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:12:49.186  INFO 5556 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:13:16.476  INFO 5556 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:13:16.477  INFO 5556 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-25 12:13:16.484  INFO 5556 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-25 12:13:25.242  INFO 11336 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 11336 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:13:25.246  INFO 11336 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:13:25.301  INFO 11336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:13:25.301  INFO 11336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:13:25.868  INFO 11336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:13:25.870  INFO 11336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:13:25.892  INFO 11336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 12:13:26.160  INFO 11336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e7942f60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:13:26.184  INFO 11336 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:13:26.196  INFO 11336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42fc6a61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:13:26.492  INFO 11336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:13:26.510  INFO 11336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:13:26.511  INFO 11336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:13:26.650  INFO 11336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:13:26.650  INFO 11336 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1349 ms
+2019-07-25 12:13:27.185  INFO 11336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:13:27.443  INFO 11336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:13:27.484  INFO 11336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:13:27.487  INFO 11336 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.647 seconds (JVM running for 3.769)
+2019-07-25 12:13:38.194  INFO 11336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:13:38.195  INFO 11336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:13:38.201  INFO 11336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-25 12:13:38.228  INFO 11336 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:13:38
+2019-07-25 12:13:38.242  INFO 11336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:13:38.243  WARN 11336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:13:38.341  INFO 11336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:13:44.082  INFO 11336 --- [http-nio-8080-exec-2] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:13:44
+2019-07-25 12:13:48.015  INFO 11336 --- [http-nio-8080-exec-3] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:13:48
+2019-07-25 12:14:15.487  INFO 3824 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-15QKEJO with PID 3824 (F:\springbootdemo\target\classes started by Administrator in F:\springbootdemo)
+2019-07-25 12:14:15.489  INFO 3824 --- [restartedMain] c.e.s.SpringbootdemoApplication          : The following profiles are active: dev
+2019-07-25 12:14:15.527  INFO 3824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-25 12:14:15.528  INFO 3824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-25 12:14:16.070  INFO 3824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-25 12:14:16.072  INFO 3824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-25 12:14:16.093  INFO 3824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-25 12:14:16.332  INFO 3824 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1a42c373] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:14:16.358  INFO 3824 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-07-25 12:14:16.369  INFO 3824 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75aafe74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 12:14:16.663  INFO 3824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-25 12:14:16.683  INFO 3824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 12:14:16.683  INFO 3824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-25 12:14:16.832  INFO 3824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-07-25 12:14:16.832  INFO 3824 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1304 ms
+2019-07-25 12:14:17.362  INFO 3824 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 12:14:17.613  INFO 3824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-25 12:14:17.656  INFO 3824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2019-07-25 12:14:17.659  INFO 3824 --- [restartedMain] c.e.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.525 seconds (JVM running for 3.629)
+2019-07-25 12:14:22.349  INFO 3824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 12:14:22.349  INFO 3824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-25 12:14:22.355  INFO 3824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-25 12:14:22.378  WARN 3824 --- [http-nio-8080-exec-1] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:22
+2019-07-25 12:14:22.392  INFO 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-25 12:14:22.393  WARN 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-25 12:14:22.484  INFO 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-25 12:14:26.668  WARN 3824 --- [http-nio-8080-exec-2] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:26
+2019-07-25 12:14:27.365  WARN 3824 --- [http-nio-8080-exec-3] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:27
+2019-07-25 12:14:27.540  WARN 3824 --- [http-nio-8080-exec-4] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:27
+2019-07-25 12:14:27.707  WARN 3824 --- [http-nio-8080-exec-6] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:27
+2019-07-25 12:14:27.848  WARN 3824 --- [http-nio-8080-exec-7] c.e.s.controller.StudentController       : method : getStudent 2019-07-25 12:14:27

@@ -129,24 +129,28 @@ public class LoginController {
 
     @RequestMapping("exports1")
     public void exportToMap(HttpServletResponse response){
+        //todo 这里集合如果使用linkedhashmap的话，顺序就是添加的顺序，key没什么用，不重复就行
         Map<String,Object> map = new HashMap<>();
         map.put("表头列名1","水电费");
-        map.put("表头列名2","地方");
-        map.put("表头列名3","胜地");
+        map.put("表头列名3","地方");
+        map.put("表头列名2","胜地");
         Map<String,Object> map1 = new HashMap<>();
-        map1.put("表头列名3","水电费1");
-        map1.put("表头列名2","地方1");
         map1.put("表头列名1","胜地1");
-        List<Map<String,Object>> listMap = new LinkedList<>();
+        map1.put("表头列名2","地方1");
+        map1.put("表头列名3","水电费1");
+        List<Map<String,Object>> listMap = new ArrayList<>();
         listMap.add(map);
         listMap.add(map1);
-        List<List<Map<String,Object>>> dataLists = new LinkedList<>();
+        List<List<Map<String,Object>>> dataLists = new ArrayList<>();
+        dataLists.add(listMap);
         dataLists.add(listMap);
         if (!dataLists.isEmpty()) {
             try {
-                List<String> headers = new ArrayList<String>(Arrays.asList("表头列名1","表头列名2","表头列名3"));
+                List<String[]> headers = new ArrayList<>();
+                headers.add(new String[]{"表头列名1","表头列名2","表头列名3"});
+                headers.add(new String[]{"表头1","表头2","表头3","表头4"});
                 String fileName ="你的文件名，若包含Excel不支持的特殊字符，会自动处理成下划线";
-                ExportExcelUtil.exportDynamicExcel(fileName, Arrays.asList("用户历史数据"), null, headers, dataLists, response,
+                ExportExcelUtil.exportDynamicExcel(fileName, Arrays.asList("用户历史数据","测试"), null, headers, dataLists, response,
                         null, true);
             } catch (Exception e) {
                 e.printStackTrace();

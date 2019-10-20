@@ -79,7 +79,7 @@ public class ExportExcelUtil<T> {
      * @param titleName
      *            表格的标题名称（没有标题，则传null）
      * @param headers
-     *            表头列表
+     *            表头列表,如果是多个工作表，就添加多个数组
      * @param dataList
      *            要导出的数据源
      * @param HttpServletResponse
@@ -90,7 +90,7 @@ public class ExportExcelUtil<T> {
      *            空字段是否导出（true：导出，false:不导出）
      */
     public static void exportDynamicExcel(String fileName, List<String> sheetNames, String titleName,
-                                          List<String> headers, List<List<Map<String, Object>>> dataLists, HttpServletResponse response,
+                                          List<String[]> headers, List<List<Map<String, Object>>> dataLists, HttpServletResponse response,
                                           String pattern, boolean isExportNullField) {
         XSSFWorkbook wb = exportDynamicExcelImpl(sheetNames, titleName, headers, dataLists, pattern, isExportNullField);
         setResponseHeader(response, replaceSpecStr(fileName));
@@ -297,7 +297,7 @@ public class ExportExcelUtil<T> {
      *            是否导出空字段
      * @return
      */
-    private static XSSFWorkbook exportDynamicExcelImpl(List<String> sheetNames, String titleName, List<String> headers,
+    private static XSSFWorkbook exportDynamicExcelImpl(List<String> sheetNames, String titleName, List<String[]> headers,
                                                        List<List<Map<String, Object>>> dataLists, String pattern, boolean isExportNullField) {
         // 创建一个工作薄
         XSSFWorkbook workbook = new XSSFWorkbook();
@@ -334,10 +334,11 @@ public class ExportExcelUtil<T> {
             dataSetFont.setColor(new XSSFColor(java.awt.Color.BLACK));
             // 为正文设置样式
             dataSetStyle.setFont(dataSetFont);
+            int headerSize = headers.get(i).length;
             if (titleName != null && titleName != "") {
                 XSSFCellStyle titleStyle = workbook.createCellStyle();
                 // 将首行合并居中作为标题栏
-                sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, headers.size() - 1));
+                sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, headerSize - 1));
                 XSSFFont titleFont = workbook.createFont();
                 // 设置标题字体大小
                 titleFont.setFontHeightInPoints((short) 20);
@@ -352,10 +353,11 @@ public class ExportExcelUtil<T> {
             int index = titleName == null || titleName.equals("") ? 0 : 1;
             // 创建表头并设置样式
             XSSFRow row = sheet.createRow(index);
-            for (short j = 0; j < headers.size(); j++) {
+            String[] headerValue = headers.get(i);
+            for (short j = 0; j < headerSize; j++) {
                 XSSFCell cell = row.createCell(j);
                 cell.setCellStyle(headersStyle);
-                XSSFRichTextString text = new XSSFRichTextString(headers.get(j));
+                XSSFRichTextString text = new XSSFRichTextString(headerValue[j]);
                 cell.setCellValue(text);
             }
             // 导出正文数据，并设置其样式
@@ -365,13 +367,15 @@ public class ExportExcelUtil<T> {
                     index++;
                     row = sheet.createRow(index);
                     Map<String, Object> map = it.next();
-                    headers = new ArrayList<String>(map.keySet());
+                    //headers = new ArrayList<String>(map.keySet());
                     List<Object> values = new ArrayList<Object>(map.values());
-                    for (int k = 0; k < map.keySet().size(); k++) {
+                    int size = map.keySet().size();
+                    for (int k = 0; k < size; k++) {
                         try {
                             XSSFCell cell = row.createCell(k);
                             String textValue = null;
-                            Object value = values.get(k);
+                            //Object value = values.get(size-k-1);
+                            Object value = map.get(headerValue[k]);
                             // 如果是时间类型,格式化
                             if (value instanceof Date) {
                                 Date date = (Date) value;

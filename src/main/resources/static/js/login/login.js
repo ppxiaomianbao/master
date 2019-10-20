@@ -19,12 +19,13 @@ function exports() {
 }
 
 function exports1() {
+    debugger;
     var url = getPath() + "/login/exports1";
-    /*var html = "<from method='get' id='exportTest'></from>";
+    var html = "<form method='get' id='exportTest'></form>";
+    $("body").append(html);
     $("#exportTest").attr("action",url);
-    $("body").appendTo(html);
-    $("#exportTest").submit();*/
-    window.location.href=url;
+    $("#exportTest").submit();
+    //window.location.href=url;
 }
 
 function getPath(){
