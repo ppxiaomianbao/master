@@ -74,6 +74,12 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!--mongodb依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
         <!--java与json互转所需的依赖-->
         <dependency>
             <groupId>com.alibaba</groupId>
