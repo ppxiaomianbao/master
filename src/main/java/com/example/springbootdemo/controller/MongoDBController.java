@@ -3,9 +3,14 @@ package com.example.springbootdemo.controller;
 import com.example.springbootdemo.Repository.MongoRepositorys;
 import com.example.springbootdemo.entity.MongoInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -47,6 +52,34 @@ public class MongoDBController {
         MongoInfo mongoInfo = new MongoInfo(id,userName,passWord);
         mongoRepositorys.save(mongoInfo);
         return "success";
+    }
+    /*======================================以下是自定义方法====================================================*/
+    @RequestMapping("getByName")
+    public MongoInfo deelte(String name){
+        MongoInfo byUserName = mongoRepositorys.getByUsername(name);
+        return byUserName;
+    }
+
+    @RequestMapping("getByUsernameLike")
+    public List<MongoInfo> getMongoInfoByNameLike(String name){
+        List<MongoInfo> byUsernameLike = mongoRepositorys.getByUsernameLike(name);
+        return byUsernameLike;
+    }
+
+    @RequestMapping("getByUsernameAndPage")
+    public List<MongoInfo> getByUsernameAndPage(String name,int page,int size){
+        //mongodb中的分页页码是从0开始的
+        PageRequest pageRequest = PageRequest.of(page,size);
+        List<MongoInfo> content = mongoRepositorys.getByUsernameLike(name, pageRequest).getContent();
+        return content;
+    }
+
+    @RequestMapping("getByIdNotNull")
+    public List<MongoInfo> getByIdNotNull(int page,int size){
+        Pageable pageable = PageRequest.of(page,size);
+        Page<MongoInfo> byIdNotNull = mongoRepositorys.getByIdNotNull(pageable);
+        List<MongoInfo> content = byIdNotNull.getContent();
+        return content;
     }
 
 
