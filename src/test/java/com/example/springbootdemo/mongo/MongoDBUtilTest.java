@@ -6,11 +6,10 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import org.bson.*;
-import org.bson.codecs.configuration.CodecRegistry;
-import org.bson.conversions.Bson;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 /**
  * @ProjectName: springbootdemo
@@ -87,6 +86,19 @@ public class MongoDBUtilTest {
                 Object o = document.get(str);
                 System.out.println("key: " + str + " value: " + o);
             }
+        }
+    }
+
+    @Test  //模糊查询所有数据 todo append("$options", "i")是忽略大小写匹配
+    public void test_findByLike(){
+        FindIterable<Document> documents = dbCollection.find(new Document().append("name", new Document("$regex", "M").append("$options", "i")));
+        for(Document document:documents){
+            Set<String> strings = document.keySet();
+            for(String str:strings){
+                Object o = document.get(str);
+                System.out.println("key: " + str + " value: " + o);
+            }
+            System.out.println();
         }
     }
 }
