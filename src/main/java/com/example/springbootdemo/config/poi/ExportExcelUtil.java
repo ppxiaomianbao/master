@@ -73,7 +73,7 @@ public class ExportExcelUtil<T> {
      * 导出多Sheet动态列的Excel到HttpServletResponse流中
      *
      * @param fileName
-     *            另存为文件名
+     *            导出的excel名称
      * @param sheetName
      *            工作簿中的多张Sheet工作表的名称列表
      * @param titleName

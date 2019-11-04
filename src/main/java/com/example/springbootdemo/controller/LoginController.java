@@ -129,7 +129,6 @@ public class LoginController {
 
     @RequestMapping("exports1")
     public void exportToMap(HttpServletResponse response){
-        //todo 这里集合如果使用linkedhashmap的话，顺序就是添加的顺序，key没什么用，不重复就行
         Map<String,Object> map = new HashMap<>();
         map.put("表头列名1","水电费");
         map.put("表头列名3","地方");

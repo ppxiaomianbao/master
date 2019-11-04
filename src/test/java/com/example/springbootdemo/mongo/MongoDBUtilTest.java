@@ -5,6 +5,7 @@ import com.example.springbootdemo.config.MongoDBUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import org.bson.*;
 import org.junit.Test;
 
@@ -23,12 +24,16 @@ import java.util.regex.Pattern;
 public class MongoDBUtilTest {
     private static final MongoDBUtil mongoDBUtil = MongoDBUtil.getInstance("127.0.0.1",27017);
     MongoCollection<Document> dbCollection = mongoDBUtil.getDBCollection("admin", "test");
-
+    MongoDatabase admin = mongoDBUtil.getMongoDatabase("admin");
 
     @Test  //添加一条数据
     public void test_insertOne(){
         Document document = new Document("name","Mongo测试");
-        dbCollection.insertOne(document);
+        MongoCollection<Document> test = admin.getCollection("mongoInfo");
+        /**todo 删除一个collection，如果添加的时候指定了一个不存在的collection，会自动的创建一个
+         * MongoCollection<Document> mongoinfo = admin.getCollection("mongoinfo");
+        mongoinfo.drop();*/
+        test.insertOne(document);
     }
 
     @Test  //添加多条数据,可以添加各种数据结构

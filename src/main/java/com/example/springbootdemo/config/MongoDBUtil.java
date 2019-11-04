@@ -1,8 +1,8 @@
 package com.example.springbootdemo.config;
 
-import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
 /**
@@ -50,9 +50,15 @@ public class MongoDBUtil {
         mongoClient = new MongoClient(host,port);
     }
 
-    //获取mongo连接对象
+    //获取mongo连接对象,传入数据库和collection名称
     public MongoCollection<Document> getDBCollection(String dbName, String collectionName){
         return mongoClient.getDatabase(dbName).getCollection(collectionName);
+    }
+
+    //获取mongo数据库，再根据数据库连接数据库下的collection
+    public MongoDatabase getMongoDatabase(String dbName){
+        MongoDatabase database = mongoClient.getDatabase(dbName);
+        return database;
     }
 
 }
