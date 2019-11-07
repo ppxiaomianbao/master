@@ -1,11 +1,6 @@
 package com.example.springbootdemo.config.fiter;
 
-import com.example.springbootdemo.config.ThreadLocalUtil;
-import com.example.springbootdemo.entity.User;
-
 import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -27,12 +22,6 @@ public class CheckSessionOutFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest req = (HttpServletRequest) servletRequest;
-        HttpSession session = req.getSession();
-        StringBuffer path = req.getRequestURL();
-        String servletPath = req.getServletPath();
-        User user = (User) session.getAttribute("user");
-        ThreadLocalUtil.setUser(user);
         filterChain.doFilter(servletRequest,servletResponse);
     }
 

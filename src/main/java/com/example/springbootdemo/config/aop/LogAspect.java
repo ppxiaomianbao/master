@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
@@ -24,7 +25,7 @@ import java.util.Arrays;
  */
 @Aspect
 @Component
-public class LogAspect {
+public class LogAspect{
     private Logger logger = LoggerFactory.getLogger(LogAspect.class);
     @Pointcut("execution(public * com.example.springbootdemo.controller.*.*(..))")
     public void webLog(){}
