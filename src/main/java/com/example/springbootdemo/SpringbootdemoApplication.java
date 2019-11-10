@@ -45,7 +45,7 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
     // ，excludePathPatterns方法设置不需要拦截的请求
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/login","/login/index","/login/register");
+        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/login","/login/index","/login/register","/static/**");
         //excludePathPatterns("/login/login","/static/**", "/templates/**");
     }
 
@@ -58,13 +58,15 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
      * @Return
      * @Exception todo 因为继承了webmvcconfigtionsupport所以springboot的默认配置失效，
      *  todo 导致静态资源无法访问，所以重写此方法，添加静态资源的访问权限
-     *  todo addResourceHandler 设置目录
-     *  todo addResourceLocations设置目录下的资源是可以访问的
+     *  todo addResourceHandler 对外暴露的访问路径
+     *  todo addResourceLocations指的是文件放置的目录
      * @Date 2019/9/5 12:00
      */
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**").addResourceLocations("classpath:/static/**");
+        //addResoureHandler指的是对外暴露的访问路径, addResourceLocations指的是文件放置的目录
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        //registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
         super.addResourceHandlers(registry);
     }
 }
