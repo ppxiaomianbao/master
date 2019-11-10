@@ -24,24 +24,29 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
         SpringApplication.run(SpringbootdemoApplication.class, args);
     }
 
+    //注册自定义过滤器
     @Bean
     public FilterRegistrationBean getFilterRegistration(){
         FilterRegistrationBean filterRegistrationBean =new FilterRegistrationBean();
         filterRegistrationBean.setFilter(getCheckSessionOutFilter());
-        filterRegistrationBean.addUrlPatterns("/*");
+        filterRegistrationBean.addUrlPatterns("/**");
         filterRegistrationBean.setName("sessionTimeOutFilter");
         filterRegistrationBean.setOrder(2);
         return filterRegistrationBean;
     }
 
+    //把自定义过滤器交给spring管理
     @Bean
     public CheckSessionOutFilter getCheckSessionOutFilter(){
         return new CheckSessionOutFilter();
     }
 
+    //添加自定义拦截器，addPathPatterns("/**")设置拦截所有请求
+    // ，excludePathPatterns方法设置不需要拦截的请求
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/*").excludePathPatterns("/login/login");
+        registry.addInterceptor(new CheckInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/login","/login/index","/login/register");
+        //excludePathPatterns("/login/login","/static/**", "/templates/**");
     }
 
     /**
@@ -53,6 +58,8 @@ public class SpringbootdemoApplication extends WebMvcConfigurationSupport {
      * @Return
      * @Exception todo 因为继承了webmvcconfigtionsupport所以springboot的默认配置失效，
      *  todo 导致静态资源无法访问，所以重写此方法，添加静态资源的访问权限
+     *  todo addResourceHandler 设置目录
+     *  todo addResourceLocations设置目录下的资源是可以访问的
      * @Date 2019/9/5 12:00
      */
     @Override
