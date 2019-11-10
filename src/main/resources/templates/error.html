@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>异常信息</title>
+</head>
+<style>
+    span{
+        color: red;
+    }
+</style>
+<body>
+
+<div align="center">
+    <p><h3>异常代码为：<span th:text="${errorCode}"></span></h3></p>
+    <p><h3>异常信息为：<span th:text="${message}"></span></h3></p>
+</div>
+</body>
+</html>
